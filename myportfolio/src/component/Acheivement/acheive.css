@@ -1,0 +1,151 @@
+.project{
+  margin-top: 40px;
+  justify-self: flex-end;
+  width: 699px;
+  text-align: left;
+}
+/* this is for project container  */
+@keyframes proj {
+  from{
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+.p-container:nth-child(1){
+  animation-delay: 0s;
+}
+.p-container:nth-child(2){
+  animation-delay: 0.5s;
+}
+.p-container:nth-child(3){
+  animation-delay: 1s;
+}
+.p-container:nth-child(4){
+  animation-delay: 1.5s;
+}
+.p-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 170px;
+  width: 640px;
+  margin-top: 30px;
+  /* border: 1px solid; */
+  border-radius: 20px;
+  background-color: #2f2f2f;
+  padding: 20px;
+  animation: proj 1s cubic-bezier(0, 1.05, 1, 1) forwards;
+  opacity: 0;
+  /* this is for inside project container  */
+  .p-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 30px;
+    background-color: #2f2f2f;
+  }
+  .p-img img{
+    border-radius: 10px;
+    background-color: gray;
+    border: none;
+  }
+
+  /* img and view button in project container  */
+  .img-bttn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color:  #2f2f2f;
+
+  }
+  .p-img p{
+    width: 500px;
+    background-color: #2f2f2f;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+  }
+    
+  .img-bttn button{
+      background-color: green;
+    border: none;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+}
+
+
+/* this is for the tools i have learned  */
+.img{
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+} 
+.img img{
+  animation: slide-in 2s cubic-bezier(0.45, 0.13, 0, 0.92) forwards;
+opacity: 0;
+/* transform: translateX(150px); */
+}
+@keyframes slide-in {
+  from{
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+.img img{
+  animation: slide-in 2s cubic-bezier(0.45, 0.13, 0, 0.92) forwards;
+  opacity: 0;
+  transform: translateX(150px);
+}
+.img img:nth-child(1){
+  animation-delay: 0s;
+}
+.img img:nth-child(2){
+  animation-delay: 0.5s;
+}
+.img img:nth-child(3){
+  animation-delay: 1s;
+}
+.img img:nth-child(4){
+  animation-delay: 1.5s;
+}
+.img img:nth-child(5){
+  animation-delay: 2s;
+}
+.img img:nth-child(6){
+  animation-delay: 2.5s;
+}
+.img img:nth-child(7){
+  animation-delay: 3s;
+}
+.heading-tech h1{
+  margin-top: 80px;
+  transform: translateX(30px);
+  color: transparent;
+  background: linear-gradient(to left,rgb(77, 77, 77),rgb(96, 95, 95), rgb(155, 155, 155));
+  -webkit-background-clip: text;
+}
+.tech-head h1{
+  /* transform: translateX(-200px); */
+  margin-bottom: 50px;
+}

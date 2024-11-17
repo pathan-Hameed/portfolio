@@ -1,0 +1,129 @@
+
+
+/* this is for both container  */
+.container{
+  /* margin-right: 20px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 50px;
+  overflow: hidden;
+}
+.container1{
+  margin-top: 20px;
+  max-width: 400px;
+  width: 400px;
+
+}
+/* has porfile pic and name */
+.profile{
+  padding: 10px;
+  border: none;
+  background-color: rgb(55 168 175);
+  display: flex;
+  border-radius: 40px;
+  box-shadow: -3px 4px 15px 6px rgba(5, 173, 199, 0.4);
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  gap: 20px;
+  z-index: 1000;
+  position: fixed;
+  width: 400px;
+  min-height: 90vh;
+  max-height: 90vh;
+
+ .pic{
+  position: sticky;
+  background-color: black;
+
+ } 
+ img{
+    position: relative;
+    border-radius: 110px;
+    animation: myname 1s ease-out 0s forwards;
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  .connect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    animation: slide-in 2s cubic-bezier(0.45, 0.13, 0, 0.92) forwards;
+    animation-delay: 0;
+    fill: black;
+    height: 50px;
+    padding: 10px;
+    width: 100px;
+    background-color: rgb(55 168 175);
+    a{
+      background-color: rgb(55 168 175);
+    }
+    svg{
+      background-color: black;
+      fill: white;
+      border-radius: 5px;
+  }
+  svg:hover{
+      fill: green;
+      width:25px;
+      height:25px;
+      viewBox: 0 0 16 16;
+  }
+  }
+}
+/* this is for the name  */
+.profile h1 {
+  padding: 0;margin: 0;
+  text-align: center;
+  font-size: 54px;
+  color: transparent; 
+  background: linear-gradient(to right, rgb(57, 36, 142), rgb(1, 53, 198),rgb(87, 67, 96));  
+  -webkit-background-clip: text; 
+  animation: myname 1s ease-in 0s forwards;
+  opacity: 0;
+}
+/* keyframe of porfile h1 tag */
+@keyframes myname {
+  from{
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+/* this is for the second content in which every thing is displayed */
+.container2{
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  max-width: 600px;
+
+}
+.content{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 30px;
+  width: 700px;
+  text-align: left;
+  padding-right: 20px;
+}
+.content p{
+  font-weight: bold;
+  text-align: left;
+  line-height: 32px;
+  width: 650px;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
